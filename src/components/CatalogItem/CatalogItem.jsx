@@ -57,13 +57,17 @@ export default function CatalogItem({ data }) {
             <p className={css.textLocation}>{location}</p>
           </div>
         </div>
+
         <p className={css.description}>{description}</p>
-        <p className={css.text}>{adults} adults</p>
-        <p className={css.text}>{transmission}</p>
-        <p className={css.text}>{engine}</p>
-        {details.kitchen !== 0} && <p className={css.text}>Kitchen</p>
-        <p className={css.text}>({details.beds.length} Beds)</p>
-        {details.airConditioner !== 0} && <p className={css.text}>AC</p>
+
+        <ul className={css.divInfo}>
+          <li className={`${css.text} ${css.textTransform}`}>{adults} adults</li>
+          <li className={css.text}>{transmission}</li>
+          <li className={css.text}>{engine}</li>
+          {details.kitchen !== 0 && <li className={css.text}>Kitchen</li>}
+          <li className={`${css.text} ${css.textTransform}`}>{details.beds} beds</li>
+          {details.airConditioner !== 0 && <li className={css.text}>AC</li>}
+        </ul>
         <div className={css.btnWrap}>
           <button
             type="button"

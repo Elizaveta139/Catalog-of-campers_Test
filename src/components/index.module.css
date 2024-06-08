@@ -1,10 +1,12 @@
 :root {
   --button: #e44848;
+  --button-hover: #d84343;
   --main: #101828;
   --inputs: #f7f7f7;
   --block-features: #f2f4f7;
   --rating: #ffc531;
   --text: #475467;
+  --white: #fff;
 }
 
 body {
