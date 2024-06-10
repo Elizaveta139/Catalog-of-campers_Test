@@ -7,7 +7,7 @@ import sprite from '../../assets/sprite.svg';
 
 export default function CatalogItem({ data }) {
   const dispatch = useDispatch();
-  const [selectedCamperId, setSelectedCamperId] = useState(null);
+  // const [selectedCamperId, setSelectedCamperId] = useState(null);
   //   const [selectedCamper, setSelectedCamper] = useState(null);
   //   const [isModalOpen, setIsModalOpen] = useState(false);
   const {
