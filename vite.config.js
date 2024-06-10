@@ -7,5 +7,5 @@ export default defineConfig({
   build: {
     sourcemap: true,
   },
-  baseDirectory: '/dist',
+  base: '/<Catalog-of-campers_Test>/',
 });
